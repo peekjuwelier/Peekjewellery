@@ -1,0 +1,13 @@
+.header-custom-style{
+    background: none;
+}
+
+.main{
+    padding: 0;
+}
+
+@media only screen and (max-width: 867px) {
+    .main {
+        padding-top: 100px;
+    }
+}
