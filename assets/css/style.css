@@ -30,6 +30,13 @@ header {
     background: #161616;
 }
 
+.nav-bar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
 .external-indentation {
     display: flex;
     flex-direction: column;
@@ -54,22 +61,6 @@ header {
     background-color: #35373d;
 }
 
-
-.privacy {
-    display: flex;
-    height: 50px;
-    background: #243d58;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Jost';
-    color: #dfdfdf;
-    padding: 0 10px;
-}
-
-.privacy a {
-    color: #a8a8a8;
-}
-
 .header {
     align-items: center;
     text-align: center;
@@ -80,7 +71,6 @@ header {
     z-index: 9999;
     top: 0;
     transition: all 0.3s ease 0s;
-    padding: 20px 0;
 }
 
 .logo {
@@ -98,7 +88,7 @@ header {
 
 .menu__items li a {
     text-decoration: none;
-    color: #ffffff;
+    color: #fff;
     text-transform: uppercase;
 }
 
@@ -176,7 +166,7 @@ header {
     background: #161616;
 }
 
-.error__404 {
+.error__code {
     font-size: 53px;
     font-family: 'Jost';
 }
@@ -188,19 +178,19 @@ header {
     align-items: center;
 }
 
-.error__text {
+.error__message {
     margin-top: 20px;
     font-size: 27px;
     font-family: 'Jost';
     text-align: center;
 }
 
-.error__a-return-button {
+.lightBg__return-button-link{
     margin-top: 20px;
     text-decoration: none;
 }
 
-.error__return-button {
+.lightBg__return-button{
     font-size: 18px;
     font-family: 'Jost';
     padding: 20px;
@@ -208,7 +198,7 @@ header {
     color: #000;
 }
 
-.error__return-button:hover {
+.lightBg__return-button:hover{
     border: 1px solid #fff;
     background: #000;
     color: #fff;
@@ -252,141 +242,199 @@ header {
     overflow: hidden;
 }
 
-.greetings {
-    display: flex;
-    justify-content: center;
-    padding: 50px 350px;
-    font-size: 27px;
-    font-family: 'Jost';
-    border-bottom: 1px solid;
+.content-block{
+    position: relative;
 }
 
-.card {
-    width: 250px;
-    overflow: hidden;
+.content-block__image{
+    width: 100%;
+    height: 1000px;
+    object-fit: cover;
+}
+
+.content-block__overlay{
+    position: absolute;
+    top: 55%;
+    left: 28%;
+    transform: translate(-50%, -50%);
+    max-width: 625px;
+}
+
+.content-block__style{
+    right: 28%;
+    transform: translate(90%, -50%);
+}
+
+.content-block__title{
+    font-family: 'bellefair';
+    font-size: 67px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.custom-slider__slide{
     display: flex;
+}
+
+.custom-slide__image{
+    width: 75%;
+    object-fit: cover;
+    height: 800px;
+}
+
+.content-block__text{
+    font-family: 'Jost';
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.custom-slide-content{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background: #F6F3EF;
+}
+
+.custom-slide-content__title{
+    font-family: 'bellefair';
+    font-size: 67px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.custom-slide-content__text{
+    font-family: 'Jost';
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.custom-slide-content__overlay{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    max-width: 700px;
+}
+
+.logo-collection__item {
+    max-width: 150px;
+    height: auto;
+    list-style: none;
+}
+
+.logo-collection__image {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.logo-collection__list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-collection{
+    padding: 60px 0;
+}
+
+.logo-collection__item:not(:last-child){
+    margin-right: 50px;
+}
+
+.other-jewelry{
+    padding: 40px;
+    display: flex;
+    justify-content: center;
     flex-direction: column;
     align-items: center;
 }
 
-.about-us-width-box {
-    display: flex;
-    padding: 80px 0;
-    justify-content: center;
+.other-jewelry__title{
+    font-family: 'bellefair';
+    font-size: 50px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
 }
 
-.about-us {
-    width: 1300px;
+.product-collection{
     display: flex;
+    justify-content: center;
+    padding: 40px 0;
+}
+
+.product-collection__card--big{
+    display: flex;
+    flex-direction: column;
     justify-content: space-between;
 }
 
-.exclusive-jewelry-row__img {
-    width: 400px;
-    height: 400px;
-    margin: 20px 20px 10px;
-}
-
-.exclusive-jewelry-row {
+.product-collection__card-group{
     display: flex;
-    justify-content: center;
-}
-
-.exclusive-jewelry {
-    padding: 60px 0;
-    border-top: 1px solid;
-}
-
-
-.exclusive-jewelry-row__word {
-    display: flex;
-    align-items: center;
     flex-direction: column;
+    justify-content: space-between;
+    margin-left: 30px;
+}
+
+.product-collection__card--group{
+    display: flex;
+}
+
+.product-collection__card--group .product-collection__card-title {
+    max-width: none;
+}
+
+.product-collection__card {
+    position: relative;
+    height: auto;
+    width: 600px;
+    overflow: hidden;
+    padding: 40px;
+    cursor: pointer;
+    box-shadow: 0px 4px 7px 2px rgba(0, 0, 0, 0.1);
+}
+
+.product-collection__card-image-wrapper{
+    width: 100%;
+    display: flex;
     justify-content: center;
 }
 
-.exclusive-jewelry-row__title {
-    font-family: 'Jost';
-    font-size: 27px;
+.product-collection__card-image {
+    object-fit: cover;
+    transition: transform 0.8s ease;
 }
 
-.exclusive-jewelry-row__text {
-    margin-top: 40px;
+.product-collection__card:hover .product-collection__card-image {
+    transform: scale(1.1);
+}
+
+.product-collection__card-collection {
     font-family: 'Jost';
     font-size: 16px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
 }
 
-.exclusive-jewelry-mobile {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-top: 1px solid;
-    padding: 60px 0;
-}
-
-.card__information {
-    border-bottom: 1px solid;
-    border-top: 1px solid;
-    padding: 20px 0;
-    margin-top: 20px;
-}
-
-.card__title {
-    font-family: 'Jost';
-    font-size: 15px;
-}
-
-.card__sub-title {
-    margin-top: 20px;
-    font-family: 'Jost';
-    font-size: 13px;
-}
-
-.card__img {
-    width: 250px;
-    height: 300px;
-}
-
-.our-promises-width-box {
-    display: flex;
-    justify-content: center;
-    padding: 80px 0;
-    border-top: 1px solid;
-}
-
-.our-promises {
-    width: 1600px;
-    display: flex;
-}
-
-.our-promises-info {
-    margin: 0 40px;
-}
-
-.our-promises img {
-    width: 600px;
-}
-
-.our-promises-info__item {
-    font-family: 'Jost';
-    font-size: 21px;
-    margin: 40px 0;
-}
-
-.our-promises-info__item-title {
-    font-size: 25px;
-    font-weight: 500;
-}
-
-.our-promises-info__title {
+.product-collection__card-title {
     font-family: 'Jost';
     font-size: 32px;
+    margin-bottom: 20px;
+    max-width: 400px;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
-.our-promises-info__sub-text {
+.product-collection__card-title--size{
+    font-size: 21px;
+}
+
+.product-collection__card-description {
     font-family: 'Jost';
-    font-size: 20px;
-    color: #313131;
+    font-size: 16px;
+    max-width: 350px;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .contents {
@@ -499,12 +547,12 @@ header {
     margin-top: 20px;
 }
 
-.main-button {
+.button {
     margin-top: 20px;
     display: flex;
 }
 
-.main-button__btn {
+.button__link {
     font-family: 'Jost';
     cursor: pointer;
     padding: 10px 15px;
@@ -515,10 +563,33 @@ header {
     text-decoration: none;
 }
 
-.main-button__btn:hover {
+.button__link:hover {
     color: #fff;
     background-color: #000;
     border: 1px solid #fff;
+    transition: 0.5s;
+}
+
+.content-block__button {
+    display: flex;
+}
+
+.content-block__link{
+    font-family: 'Jost';
+    cursor: pointer;
+    padding: 18px 60px;
+    font-size: 18px;
+    border: 1px solid #000;
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.content-block__link:hover{
+    color: #000;
+    background-color: #fff;
+    border: 1px solid #000;
     transition: 0.5s;
 }
 
@@ -528,6 +599,7 @@ header {
     color: #fff;
     font-size: 20px;
 }
+
 
 .footer__btn:hover {
     border: 1px solid #1d1d1d;
@@ -550,6 +622,72 @@ header {
     margin: 0 auto;
     column-gap: 100px;
     row-gap: 50px;
+}
+
+.jewelry-service__title{
+    font-family: 'bellefair';
+    font-size: 54px;
+    margin-bottom: 30px;
+}
+
+.jewelry-service__list{
+    font-family: 'Jost';
+    font-size: 19px;
+    list-style: none;
+    height: 300px;
+}
+
+.jewelry-service__item{
+    padding: 20px 0;
+    border-bottom: 1px solid #e6e1dc;
+    cursor: pointer;
+}
+
+.jewelry-service__question{
+    display: flex;
+    align-items: center;
+    color: #000;
+    font-size: 20px;
+}
+
+.jewelry-service{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 0;
+}
+
+.jewelry-service__answer {
+    font-size: 17px;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 0.5s ease-out, opacity 0.5s ease-out; 
+}
+
+.jewelry-service__answer--visible {
+    margin-top: 20px;
+    max-height: 500px;
+    opacity: 1;
+}
+
+.jewelry-service__content{
+    max-width: 500px;
+    margin-right: 40px;
+}
+
+.jewelry-service__icon {
+    margin-right: 10px;
+    font-size: 17px;
+    transition: transform 0.3s ease;
+}
+
+.icon-plus {
+    transform: rotate(0deg);
+}
+
+.icon-minus {
+    transform: rotate(180deg);
 }
 
 .slider-box {
@@ -622,4 +760,46 @@ header {
     border-radius: 100px;
     margin: 0 3px;
     cursor: pointer;
+}
+
+
+.swiper-container {
+    overflow: hidden;
+}
+
+.swiper-pagination,
+.swiper-button-next,
+.swiper-button-prev {
+    box-sizing: border-box;
+}
+
+.swiper-pagination,
+.swiper-button-next,
+.swiper-button-prev {
+    background: none;
+    border: none;
+}
+
+.swiper-container.custom-slider {
+    position: relative; 
+    width: 100%;
+    height: 800px;
+    overflow: hidden;
+}
+
+.swiper-slide{
+    display: flex;
+}
+
+.swiper-pagination-bullet {
+    padding: 2px;
+    border: 1px solid;
+    border-radius: 100px;
+    cursor: pointer;
+    background: none;
+    opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #000;
 }

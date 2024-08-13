@@ -41,7 +41,7 @@
                     </ul>
                 </div>
 
-                <div style="display: flex;"><div class = "main-button__btn footer__btn" onclick="window.open('https://www.mijnjuwelier.online/', '_blank');"> Bekijk onze collectie</div></div>
+                <div style="display: flex;"><div class = "button__link footer__btn" onclick="window.open('https://www.mijnjuwelier.online/', '_blank');">Bekijk onze collectie</div></div>
             </div>
         </footer>
     </div>

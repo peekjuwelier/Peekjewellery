@@ -54,11 +54,11 @@
                     <div class="slider-controllers">
                         <div class="slider-controllers__circles"></div>
                         <div class="slider-controllers__arrow">
-                            <div class="main-button">
-                                <div class="main-button__btn slider-controllers__arrow-icon icon-left"></div>
+                            <div class="button">
+                                <div class="button__link slider-controllers__arrow-icon icon-left"></div>
                             </div>
-                            <div class="main-button">
-                                <div class="main-button__btn slider-controllers__arrow-icon icon-right"></div>
+                            <div class="button">
+                                <div class="button__link slider-controllers__arrow-icon icon-right"></div>
                             </div>
                         </div>
                     </div>

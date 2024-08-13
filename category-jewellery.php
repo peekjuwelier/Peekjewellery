@@ -16,8 +16,8 @@
                                     <div class="card-section-content__title"><?php the_title();?></div>
                                     <div class="card-section-content__text"><?= CFS()->get("card_info")?></div>
                                 </div>
-                                <div class="main-button">
-                                    <a href=<?php the_permalink( )?> class="main-button__btn"><?= CFS()->get("card_more")?></a>
+                                <div class="button">
+                                    <a href=<?php the_permalink( )?> class="button__link"><?= CFS()->get("card_more")?></a>
                                 </div>
                             </div>
                             <img src="<?= CFS()->get("card_image")?>" class="card-section-content__image">

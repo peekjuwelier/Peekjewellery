@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?5ti0wn');
-  src:  url('fonts/icomoon.eot?5ti0wn#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?5ti0wn') format('truetype'),
-    url('fonts/icomoon.woff?5ti0wn') format('woff'),
-    url('fonts/icomoon.svg?5ti0wn#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?gq3m3n');
+  src:  url('fonts/icomoon.eot?gq3m3n#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?gq3m3n') format('truetype'),
+    url('fonts/icomoon.woff?gq3m3n') format('woff'),
+    url('fonts/icomoon.svg?gq3m3n#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,8 +25,14 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-instagram:before {
+.icon-minus:before {
+  content: "\e90a";
+}
+.icon-plus:before {
   content: "\e906";
+}
+.icon-instagram:before {
+  content: "\e909";
 }
 .icon-facebook:before {
   content: "\e904";
@@ -39,7 +45,7 @@
   content: "\e903";
 }
 .icon-location:before {
-  content: "\e905";
+  content: "\e907";
 }
 .icon-cross:before {
   content: "\e908";

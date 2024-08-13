@@ -1,32 +1,3 @@
-@media only screen and (max-width: 1720px) {
-    .greetings {
-        padding: 50px 300px;
-    }
-
-    .our-promises {
-        width: 1400px;
-    }
-
-    .our-promises img{
-        width: 500px;
-    }
-
-    .our-promises-info__title {
-        font-size: 26px;
-    }
-
-    .our-promises-info__item-title {
-        font-size: 21px;
-    }
-
-    .our-promises-info__item {
-        font-size: 19px;
-    }
-
-    .our-promises-info__sub-text {
-        font-size: 19px;
-    }
-}
 
 @media only screen and (max-width: 1440px) {
     .content__img img {
@@ -35,41 +6,6 @@
 
     .contents {
         width: 1000px;
-    }
-}
-
-@media only screen and (max-width: 1510px) {
-    .greetings {
-        padding: 50px 250px;
-    }
-
-    .our-promises {
-        width: 1200px;
-    }
-
-    .our-promises img{
-        width: 450px;
-    }
-
-    .our-promises-info__title {
-        font-size: 24px;
-    }
-
-    .our-promises-info__item-title {
-        font-size: 19px;
-    }
-
-    .our-promises-info__item {
-        font-size: 17px;
-    }
-
-    .our-promises-info__sub-text {
-        font-size: 17px;
-    }
-
-    .exclusive-jewelry-row__img {
-        width: 300px;
-        height: 300px;
     }
 }
 
@@ -93,43 +29,6 @@
 }
 
 @media only screen and (max-width: 1310px) {
-    .greetings {
-        padding: 50px 200px;
-        font-size: 24px;
-    }
-
-    .about-us {
-        width: 1200px;
-        justify-content: space-around;
-    }
-
-    .card {
-        width: 300px;
-    }
-
-    .our-promises {
-        width: 1000px;
-    }
-
-    .our-promises img{
-        width: 400px;
-    }
-
-    .our-promises-info__title {
-        font-size: 22px;
-    }
-
-    .our-promises-info__item-title {
-        font-size: 18px;
-    }
-
-    .our-promises-info__item {
-        font-size: 16px;
-    }
-
-    .our-promises-info__sub-text {
-        font-size: 16px;
-    }
 
     .other-style-contacts {
         padding: 150px 0;
@@ -182,40 +81,6 @@
 }
 
 @media only screen and (max-width: 1130px) {
-    .about-us {
-        width: 1000px;
-        justify-content: space-around;
-    }
-
-    .card {
-        width: 250px;
-    }
-
-    .card__information{
-        width: 250px;
-    }
-
-    .exclusive-jewelry-row__img {
-        width: 250px;
-        height: 250px;
-    }
-
-    .exclusive-jewelry-row__title {
-        font-size: 19px;
-    }
-
-    .exclusive-jewelry-row__text {
-        margin-top: 20px;
-        font-size: 14px;
-    }
-
-    .our-promises {
-        width: 900px;
-    }
-
-    .our-promises img{
-        width: 350px;
-    }
 }
 
 @media only screen and (max-width: 1000px) {
@@ -228,40 +93,6 @@
     }
 }
 
-@media only screen and (max-width: 990px) {
-    .exclusive-jewelry-row__img {
-        width: 220px;
-        height: 220px;
-    }
-    
-    .greetings {
-        padding: 50px 150px;
-    }
-
-    .our-promises {
-        width: 800px;
-    }
-
-    .our-promises img{
-        width: 350px;
-    }
-
-    .our-promises-info__title {
-        font-size: 20px;
-    }
-
-    .our-promises-info__item-title {
-        font-size: 18px;
-    }
-
-    .our-promises-info__item {
-        font-size: 16px;
-    }
-
-    .our-promises-info__sub-text {
-        font-size: 16px;
-    }
-}
 
 @media only screen and (max-width: 920px) {
     .contact-info__text {
@@ -409,96 +240,6 @@
 
     .image-header {
         display: none;
-    }
-
-    .greetings {
-        padding: 50px 100px;
-        font-size: 21px;
-    }
-
-    .about-us {
-        width: 600px;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .card {
-        width: 450px;
-        height: auto;
-        flex-direction: row;
-        align-items: start;
-        margin-top: 60px;
-    }
-
-    .card__img {
-        width: 250px;
-        height: 300px;
-    }
-
-    .card__information {
-        width: 250px;
-        height: 140px;
-        margin-left: 30px;
-        margin-top: 0;
-        border: none;
-    }
-
-    .card__title {
-        font-size: 15px;
-    }
-
-    .card__sub-title {
-        margin-top: 20px;
-        font-size: 13px;
-    }
-
-    .exclusive-jewelry{
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-    }
-
-    .exclusive-jewelry-row__img {
-        width: 400px;
-        height: auto;
-    }
-
-    .exclusive-jewelry-row__title {
-        font-size: 23px;
-    }
-
-    .exclusive-jewelry-row__text {
-        margin-top: 40px;
-        font-size: 18px;
-    }
-
-    .our-promises {
-        width: 500px;
-        flex-direction: column-reverse;
-    }
-
-    .our-promises-info__title {
-        font-size: 20px;
-    }
-
-    .our-promises-info__item-title {
-        font-size: 18px;
-    }
-
-    .our-promises-info__item {
-        font-size: 16px;
-    }
-
-    .our-promises-info__sub-text {
-        font-size: 16px;
-    }
-
-    .our-promises img {
-        margin-top: 60px;
-    }
-    
-    .our-promises-info{
-        margin: 0;
     }
 
     .other-style-contacts {
@@ -663,25 +404,7 @@
     }
 }
 
-@media only screen and (max-width: 600px) {
-    .greetings {
-        font-size: 19px;
-    }
-
-    .our-promises {
-        width: 400px;
-    }
-
-    .our-promises img {
-        width: 300px;
-    }
-}
-
 @media only screen and (max-width: 540px) {
-    .greetings {
-        padding: 50px 70px;
-        font-size: 21px;
-    }
 
     .content__img img {
         width: 350px;
@@ -689,15 +412,6 @@
 
     .contents {
         width: 350px;
-    }
-
-    .card {
-        width: auto;
-        flex-direction: column;
-    }
-
-    .card__information{
-        margin: 0;
     }
 
     .circles__item {
@@ -729,21 +443,6 @@
 
     .footer {
         padding: 40px 20px 40px 40px;
-    }
-}
-
-@media only screen and (max-width: 470px) {
-    .greetings {
-        padding: 50px 50px;
-        font-size: 19px;
-    }
-
-    .exclusive-jewelry-row__img {
-        width: 300px;
-    }
-
-    .our-promises {
-        width: 300px;
     }
 }
 
@@ -802,46 +501,22 @@
         display: none;
     }
 
-    .greetings {
-        padding: 50px 30px;
-        font-size: 18px;
+    .button__btn {
+        font-family: 'Jost';
+        cursor: pointer;
+        padding: 10px 15px;
+        font-size: 14px;
+        border: 1px solid #000;
+        background-color: #fff;
+        color: #000;
+        text-decoration: none;
     }
-
-    .card__information {
-        width: 200px;
-    }
-
-    .card__img {
-        width: 200px;
-        height: 250px;
-    }
-
-    .exclusive-jewelry-row__img {
-        width: 250px;
-    }
-
-    .our-promises {
-        width: 300px;
-    }
-
-    .our-promises {
-        width: 240px;
-    }
-
-    .our-promises-info__title {
-        font-size: 19px;
-    }
-
-    .our-promises-info__item-title {
-        font-size: 17px;
-    }
-
-    .our-promises-info__item {
-        font-size: 15px;
-    }
-
-    .our-promises img {
-        width: 240px;
+    
+    .button__btn:hover {
+        color: #fff;
+        background-color: #000;
+        border: 1px solid #fff;
+        transition: 0.5s;
     }
 }
 
@@ -886,61 +561,5 @@
 
     .menu__items::before{
         height: 70px;
-    }
-}
-
-@media only screen and (max-width: 310px) {
-    .card{
-        width: 200px;
-    }
-
-    .card__img {
-        width: 200px;
-        height: 250px;
-    }
-    
-    .card__information{
-        width: auto;
-        height: auto;
-    }
-
-    .exclusive-jewelry-row__img {
-        width: 250px;
-    }
-
-    .our-promises {
-        width: 300px;
-    }
-
-    .our-promises {
-        width: 240px;
-    }
-
-    .our-promises-info__title {
-        font-size: 19px;
-    }
-
-    .our-promises-info__item-title {
-        font-size: 17px;
-    }
-
-    .our-promises-info__item {
-        font-size: 15px;
-    }
-
-    .our-promises img {
-        width: 240px;
-    }
-
-    .exclusive-jewelry-row__img {
-        width: 220px;
-    }
-
-    .exclusive-jewelry-row__title {
-        font-size: 21px;
-    }
-
-    .exclusive-jewelry-row__text {
-        font-size: 15px;
     }
 }

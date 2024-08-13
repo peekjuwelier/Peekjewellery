@@ -2,7 +2,7 @@
    get_header();  
 ?>
 <div class="main">
-    <section calss="cards">
+    <!-- <section calss="cards">
         <div class="card-row container__cards">
 
             <?php
@@ -16,8 +16,8 @@
                                     <div class="card-section-content__title"><?php the_title();?></div>
                                     <div class="card-section-content__text"><?= CFS()->get("card_info")?></div>
                                 </div>
-                                <div class="main-button">
-                                    <a href=<?php the_permalink( )?> class="main-button__btn"><?= CFS()->get("card_more")?></a>
+                                <div class="button">
+                                    <a href=<?php the_permalink( )?> class="button__link"><?= CFS()->get("card_more")?></a>
                                 </div>
                             </div>
                             <img src="<?= CFS()->get("card_image")?>" class="card-section-content__image">
@@ -28,7 +28,21 @@
                 ?>
         </div>
     </section>
-    <?php the_posts_pagination();?>
+    <?php the_posts_pagination();?> -->
+
+
+
+    <div class="error">
+        <div class="error__code">404</div>
+        <div class="error__message">
+            Pagina komt binnenkort beschikbaar
+        </div>
+        <a class="lightBg__return-button-link" href="<?= home_url() ?>">
+            <div class="lightBg__return-button">Terug naar startpagina</div>
+        </a>
+    </div>
+
+
 </div>
 <?php
     get_footer();  

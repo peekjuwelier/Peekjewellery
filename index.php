@@ -5,114 +5,150 @@
 
     get_header(); 
 ?>
-<img src="<?= get_template_directory_uri() ?>/assets/image/home/original.jpg" class="image-header"/>
 <div class="main">
-    <div class="greetings">
-        Welkom in de wereld van PeekJuwelier! Bij ons is elk sieraad een kunstwerk, gemaakt met liefde. Onze unieke creaties combineren 
-        traditie en moderniteit en benadrukken jouw unieke stijl. Ontdek onze collectie, waar elk meesterwerk zijn eigen verhaal vertelt. 
-        Vind het perfecte sieraad samen met PeekJuwelier!
-    </div>
-    <div class="about-us-width-box">
-        <div class="about-us">
-            <div class="card">
-                <img src="<?= get_template_directory_uri() ?>/assets/image/home/aboutUs-card-image1.jpg" class="card__img"/>
-                <div class="card__information">
-                    <div class="card__title">
-                        Exclusieve Collecties
-                    </div>
-                    <div class="card__sub-title">
-                        "Peek Juwelier" presenteert regelmatig exclusieve collecties, gemaakt in unieke exemplaren. Dit zijn echte kunstwerken die uw onnavolgbare stijl benadrukken.
-                    </div>
+    <div class="content-block">
+        <img class="content-block__image" src="<?= get_template_directory_uri() ?>/assets/image/home/original.jpg"/>
+        <div class="content-block__overlay">
+            <div>
+                <div class="content-block__title">Nieuwe eigenaar bij Peek Juwelier: Arman!</div>
+                <div class="content-block__text">
+                    Arman vervolgt het werk van Simona en Rita als nieuwe eigenaar van Peek Juwelier. Verwacht spannende vernieuwingen en updates!
                 </div>
             </div>
-            <div class="card">
-                <img src="<?= get_template_directory_uri() ?>/assets/image/home/aboutUs-card-image2.jpg" class="card__img"/>
-                <div class="card__information">
-                    <div class="card__title">
-                        Individuele Sieraden
-                    </div>
-                    <div class="card__sub-title">
-                        Wij bieden diensten aan voor het maken van sieraden op maat. Onze vakmensen zullen met plezier uw ideeën tot leven brengen, waardoor een sieraad ontstaat dat uw uniciteit weerspiegelt.
-                    </div>
-                </div>
-            </div>
-            <div class="card">
-                <img src="<?= get_template_directory_uri() ?>/assets/image/home/aboutUs-card-image3.jpg" class="card__img"/>
-                <div class="card__information">
-                    <div class="card__title">
-                        Collecties van Verfijning
-                    </div>
-                    <div class="card__sub-title">
-                        Elk stuk in onze collecties is een belichaming van verfijning en elegantie. Van klassieke ontwerpen tot moderne trends - wij hebben voor elk wat wils.
-                    </div>
-                </div>
+            <div class="content-block__button wow animate__animated animate__fadeInUp">
+                <a href="#" class="content-block__link">more</a>
             </div>
         </div>
     </div>
-
-    <div class="exclusive-jewelry exclusive-jewelry-device">
-        <div class="exclusive-jewelry-row">
-            <img src="<?= get_template_directory_uri() ?>/assets/image/home/line1-1.jpg" class="exclusive-jewelry-row__img"/>
-            <img src="<?= get_template_directory_uri() ?>/assets/image/home/line1-2.jpg"class="exclusive-jewelry-row__img"/>
-            <img src="<?= get_template_directory_uri() ?>/assets/image/home/line1-3.jpg" class="exclusive-jewelry-row__img"/>
+    
+    <div class="product-collection wow animate__animated animate__fadeInUp">
+        <div class="product-collection__card product-collection__card--big">
+            <div class="product-collection__card-content">
+                <div class="product-collection__card-collection">Arior Barcelona</div>
+                <div class="product-collection__card-title">Handgemaakte Sieraden met 50 Jaar Ervaring</div>
+                <div class="product-collection__card-description">Bij Arior creëren we al 50 jaar sieraden die schoonheid en emotie uitstralen. Laat onze creaties uw merk verlichten.</div>
+            </div>
+            <div class="product-collection__card-image-wrapper">
+                <img src="<?= get_template_directory_uri() ?>/assets/image/home/arior.png" class="product-collection__card-image">
+            </div>
         </div>
-        <div class="exclusive-jewelry-row">
-            <img src="<?= get_template_directory_uri() ?>/assets/image/home/line2-1.jpg" class="exclusive-jewelry-row__img"/>
-            <div class="exclusive-jewelry-row__word exclusive-jewelry-row__img" >
-                <div class="exclusive-jewelry-row__title">Exclusieve Sieraden voor Een Unieke Stijl</div>
-                <div class="exclusive-jewelry-row__text">
-                    Welkom in de wereld van verfijnde juwelen bij "Peek Juwelier".
-                    Ontdek onze unieke combinatie van traditie en innovatie, ontworpen voor degenen 
-                    die schoonheid en elegantie in elk detail waarderen.
+        <div class="product-collection__card-group">
+            <div class="product-collection__card product-collection__card--group">
+                <div class="product-collection__card-content">
+                    <div class="product-collection__card-collection">R&C</div>
+                    <div class="product-collection__card-title product-collection__card-title--size">Wij maken niet alleen maar sieraden wij creeren tekens van liefde, emotie en herinneringen</div>
+                </div>
+                <div class="product-collection__card-image-wrapper">
+                    <img src="<?= get_template_directory_uri() ?>/assets/image/home/R&C.png" class="product-collection__card-image">
                 </div>
             </div>
-            <img src="<?= get_template_directory_uri() ?>/assets/image/home/line2-3.jpg" class="exclusive-jewelry-row__img"/>
-        </div>
-        <div class="exclusive-jewelry-row">
-            <img src="<?= get_template_directory_uri() ?>/assets/image/home/line3-1.jpg" class="exclusive-jewelry-row__img"/>
-            <img src="<?= get_template_directory_uri() ?>/assets/image/home/line3-2.jpg" class="exclusive-jewelry-row__img"/>
-            <img src="<?= get_template_directory_uri() ?>/assets/image/home/line3-3.jpg" class="exclusive-jewelry-row__img"/>
+
+            <div class="product-collection__card product-collection__card--group" style ="margin-top: 20px">
+                <div class="product-collection__card-content">
+                    <div class="product-collection__card-collection">Aller Spanninga</div>
+                    <div class="product-collection__card-title product-collection__card-title--size">Aller Spanninga smeedt al vanaf 1863 geelgouden ringen. Van klassieke tot hypermoderne ringen. Gouden trouwringen, verlovingsringen, relatieringen. Voor elke gelegenheid hebben wij de juiste ringen, wil je meer weten lees dan onze blog.</div>
+                </div>
+                <div class="product-collection__card-image-wrapper">
+                    <img src="<?= get_template_directory_uri() ?>/assets/image/home/aller-spanninga.png" class="product-collection__card-image" style="width: 200px">
+                </div>
+            </div>
         </div>
     </div>
 
-                
-    <div class="exclusive-jewelry exclusive-jewelry-mobile">
-        <div class="exclusive-jewelry-row__word exclusive-jewelry-row__img" >
-            <div class="exclusive-jewelry-row__title">Exclusieve Sieraden voor Een Unieke Stijl</div>
-            <div class="exclusive-jewelry-row__text">
-                Welkom in de wereld van verfijnde juwelen bij "Peek Juwelier".
-                Ontdek onze unieke combinatie van traditie en innovatie, ontworpen voor degenen 
-                die schoonheid en elegantie in elk detail waarderen.
+    <?php
+        $loop = CFS()->get("custom_slide_home_items");
+        if($loop != null) :
+    ?>
+    <div>
+        <div class="custom-slider swiper-container">
+            <div class="custom-slider__wrapper swiper-wrapper">
+                <?php
+                    foreach($loop as $row){
+                ?>
+                <div class="custom-slider__slide swiper-slide">
+                    <div class="custom-slide-content">
+                        <div class="custom-slide-content__overlay custom-slide-content__style">
+                            <div class="custom-slide-content__animation">
+                                <div class="custom-slide-content__title"><?= $row["custom_slide_home_title"];?></div>
+                                <div class="custom-slide-content__text">
+                                    <?= $row["custom_slide_home_description"];?>
+                                </div>
+                            </div>
+                            <div class="content-block__button">
+                                <a href="#" class="content-block__link"><?= $row["custom_slide_home_button"];?></a>
+                            </div>
+                        </div>
+                    </div>
+                    <img class="custom-slide__image" src="<?= $row["custom_slide_home_image"];?>"/>
+                </div>
+                <?php
+                    }
+                ?>
             </div>
+            <div class="swiper-pagination"></div>
         </div>
-        <img src="<?= get_template_directory_uri() ?>/assets/image/home/line1-3.jpg" class="exclusive-jewelry-row__img"/>
+
+    <?php
+        endif;
+    ?>
+
+    <?php
+        $loopQuestionAnswer = CFS()->get("question_answer_loop");
+        if($loopQuestionAnswer != null) :
+    ?>
+
+    <div class="jewelry-service wow animate__animated animate__fadeInUp">
+        <div class="jewelry-service__content">
+            <div class="jewelry-service__title">Sieraden: Reparatie, ontwerp en verkoop</div>
+            <ul class="jewelry-service__list">
+                <?php
+                    foreach($loopQuestionAnswer as $rowQuestionAnswer){
+                ?>
+                <li class="jewelry-service__item">
+                    <div class="jewelry-service__question"><div class="icon-plus jewelry-service__icon"></div><?= $rowQuestionAnswer["question_text"];?></div>
+                    <div class="jewelry-service__answer"><?= $rowQuestionAnswer["answer_text"];?></div>
+                </li>
+                <?php
+                    }
+                ?>
+            </ul>
+        </div>
+        <img class="jewelry-service__image" src="<?= CFS()->get("question_answer_image");?>"/>
     </div>
 
-    <div class="our-promises-width-box">
-        <div class="our-promises">
-            <img src="<?= get_template_directory_uri() ?>/assets/image/home/FauxPearl.jpg"/>
-            <div class="our-promises-info">
-                <div class="our-promises-info__title">
-                    Onze Beloften:
-                </div>
-                <div class="our-promises-info__text">
-                    <div class="our-promises-info__item">
-                        <span class="our-promises-info__item-title">Kwaliteit:</span> We zijn trots op de hoge kwaliteit van onze sieraden. Elk stuk ondergaat strenge kwaliteitscontrole voordat het bij u terechtkomt.
-                    </div>
+    <?php
+        endif;
+    ?>
 
-                    <div class="our-promises-info__item">
-                        <span class="our-promises-info__item-title">Individuele Benadering:</span> We waarderen elke klant en streven ernaar een individuele benadering te bieden voor elke bestelling. Uw wensen hebben onze hoogste prioriteit.
-                    </div>
 
-                    <div class="our-promises-info__item">
-                        <span class="our-promises-info__item-title">Tradities en Innovaties:</span> We respecteren de tradities van de juwelierskunst, maar houden ook de laatste trends en innovaties op het gebied van design in de gaten.
-                    </div>
-                </div>
 
-                <div class="our-promises-info__sub-text">
-                    Welkom bij "Peek Juwelier" - uw bron van unieke en verfijnde sieraden. Gun uzelf de luxe om uw dromen tot leven te brengen in de glans van edelstenen en verfijnde metalen.
-                </div>
-            </div>
+    <?php
+        $loopLogo = CFS()->get("logos");
+        if($loopLogo != null) :
+    ?>
+    <div class="logo-collection wow animate__animated animate__fadeInUp">
+        <ul class="logo-collection__list">
+            <?php
+                foreach($loopLogo as $rowLogo){
+            ?>
+            <li class="logo-collection__item">
+                <a href="<?= $rowLogo["link"];?>" target="_blank"><img class="logo-collection__image" src="<?= $rowLogo["logo"];?>"/></a>
+            </li>
+            <?php
+                }
+            ?>
+        </ul>
+    </div>
+
+    <?php
+        endif;
+    ?>
+
+    <div class="other-jewelry">
+        <div class="other-jewelry__title">Overige juwelen en sieraden</div>
+            <a class="lightBg__return-button-link" href="https://www.mijnjuwelier.online/"  target="_blank">
+                <div class="lightBg__return-button">Bekijk onze collectie</div>
+            </a>
         </div>
     </div>
 </div>
