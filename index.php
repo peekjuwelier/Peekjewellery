@@ -3,7 +3,7 @@
     Template Name: Home
 */
 
-    get_header(); 
+get_header(); 
 ?>
 <div class="main">
     <div class="content-block">
@@ -13,15 +13,13 @@
                 <div class="content-block__title">Nieuwe eigenaar bij Peek Juwelier: Arman!</div>
                 <div class="content-block__text">
                     Arman vervolgt het werk van Simona en Rita als nieuwe eigenaar van Peek Juwelier. Verwacht spannende vernieuwingen en updates!
+                    <a href="#">meer</a>
                 </div>
-            </div>
-            <div class="content-block__button wow animate__animated animate__fadeInUp">
-                <a href="#" class="content-block__link">more</a>
             </div>
         </div>
     </div>
     
-    <div class="product-collection wow animate__animated animate__fadeInUp">
+    <div class="product-collection">
         <div class="product-collection__card product-collection__card--big">
             <div class="product-collection__card-content">
                 <div class="product-collection__card-collection">Arior Barcelona</div>
@@ -42,8 +40,7 @@
                     <img src="<?= get_template_directory_uri() ?>/assets/image/home/R&C.png" class="product-collection__card-image">
                 </div>
             </div>
-
-            <div class="product-collection__card product-collection__card--group" style ="margin-top: 20px">
+            <div class="product-collection__card product-collection__card--group" style="margin-top: 20px">
                 <div class="product-collection__card-content">
                     <div class="product-collection__card-collection">Aller Spanninga</div>
                     <div class="product-collection__card-title product-collection__card-title--size">Aller Spanninga smeedt al vanaf 1863 geelgouden ringen. Van klassieke tot hypermoderne ringen. Gouden trouwringen, verlovingsringen, relatieringen. Voor elke gelegenheid hebben wij de juiste ringen, wil je meer weten lees dan onze blog.</div>
@@ -55,101 +52,68 @@
         </div>
     </div>
 
-    <?php
-        $loop = CFS()->get("custom_slide_home_items");
-        if($loop != null) :
-    ?>
+    <?php if ($loop = CFS()->get("custom_slide_home_items")) : ?>
     <div>
-        <div class="custom-slider swiper-container">
-            <div class="custom-slider__wrapper swiper-wrapper">
-                <?php
-                    foreach($loop as $row){
-                ?>
-                <div class="custom-slider__slide swiper-slide">
-                    <div class="custom-slide-content">
-                        <div class="custom-slide-content__overlay custom-slide-content__style">
-                            <div class="custom-slide-content__animation">
-                                <div class="custom-slide-content__title"><?= $row["custom_slide_home_title"];?></div>
-                                <div class="custom-slide-content__text">
-                                    <?= $row["custom_slide_home_description"];?>
-                                </div>
+        <div class="slider-v1 swiper-container wow animate__animated animate__fadeInUp">
+            <div class="slider-v1__wrapper swiper-wrapper">
+                <?php foreach ($loop as $row) : ?>
+                <div class="slider-v1__slide swiper-slide">
+                    <div class="slider-v1__slide">
+                        <div class="slider-v1__overlay slider-v1__style">
+                            <div class="slider-v1__animation">
+                                <div class="slider-v1__title"><?= $row["custom_slide_home_title"];?></div>
+                                <div class="slider-v1__text"><?= $row["custom_slide_home_description"];?></div>
                             </div>
                             <div class="content-block__button">
                                 <a href="#" class="content-block__link"><?= $row["custom_slide_home_button"];?></a>
                             </div>
                         </div>
                     </div>
-                    <img class="custom-slide__image" src="<?= $row["custom_slide_home_image"];?>"/>
+                    <img class="slider-v1__image" src="<?= $row["custom_slide_home_image"];?>"/>
                 </div>
-                <?php
-                    }
-                ?>
+                <?php endforeach; ?>
             </div>
-            <div class="swiper-pagination"></div>
+            <div class="slider-v1__pagination swiper-pagination"></div>
         </div>
+    </div>
+    <?php endif; ?>
 
-    <?php
-        endif;
-    ?>
-
-    <?php
-        $loopQuestionAnswer = CFS()->get("question_answer_loop");
-        if($loopQuestionAnswer != null) :
-    ?>
-
+    <?php if ($loopQuestionAnswer = CFS()->get("question_answer_loop")) : ?>
     <div class="jewelry-service wow animate__animated animate__fadeInUp">
         <div class="jewelry-service__content">
             <div class="jewelry-service__title">Sieraden: Reparatie, ontwerp en verkoop</div>
             <ul class="jewelry-service__list">
-                <?php
-                    foreach($loopQuestionAnswer as $rowQuestionAnswer){
-                ?>
+                <?php foreach ($loopQuestionAnswer as $rowQuestionAnswer) : ?>
                 <li class="jewelry-service__item">
                     <div class="jewelry-service__question"><div class="icon-plus jewelry-service__icon"></div><?= $rowQuestionAnswer["question_text"];?></div>
                     <div class="jewelry-service__answer"><?= $rowQuestionAnswer["answer_text"];?></div>
                 </li>
-                <?php
-                    }
-                ?>
+                <?php endforeach; ?>
             </ul>
         </div>
-        <img class="jewelry-service__image" src="<?= CFS()->get("question_answer_image");?>"/>
+        <div>
+            <img class="jewelry-service__image" src="<?= CFS()->get("question_answer_image");?>"/>
+        </div>
     </div>
+    <?php endif; ?>
 
-    <?php
-        endif;
-    ?>
-
-
-
-    <?php
-        $loopLogo = CFS()->get("logos");
-        if($loopLogo != null) :
-    ?>
+    <?php if ($loopLogo = CFS()->get("logos")) : ?>
     <div class="logo-collection wow animate__animated animate__fadeInUp">
         <ul class="logo-collection__list">
-            <?php
-                foreach($loopLogo as $rowLogo){
-            ?>
+            <?php foreach ($loopLogo as $rowLogo) : ?>
             <li class="logo-collection__item">
                 <a href="<?= $rowLogo["link"];?>" target="_blank"><img class="logo-collection__image" src="<?= $rowLogo["logo"];?>"/></a>
             </li>
-            <?php
-                }
-            ?>
+            <?php endforeach; ?>
         </ul>
     </div>
+    <?php endif; ?>
 
-    <?php
-        endif;
-    ?>
-
-    <div class="other-jewelry">
+    <div class="other-jewelry wow animate__animated animate__fadeInUp">
         <div class="other-jewelry__title">Overige juwelen en sieraden</div>
-            <a class="lightBg__return-button-link" href="https://www.mijnjuwelier.online/"  target="_blank">
-                <div class="lightBg__return-button">Bekijk onze collectie</div>
-            </a>
-        </div>
+        <a class="content-block__button" href="https://www.mijnjuwelier.online/" target="_blank">
+            <div class="content-block__link">Bekijk onze collectie</div>
+        </a>
     </div>
 </div>
 

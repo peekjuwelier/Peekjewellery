@@ -42,17 +42,32 @@ window.addEventListener("resize", checkWindowStatus)
 window.addEventListener("load", window.onbeforeunload = () => window.scrollTo(0, 0))
 
 
-document.addEventListener("DOMContentLoaded", () => {
-    const questions  = document.querySelectorAll('.jewelry-service__question')
-    const answers = document.querySelectorAll('.jewelry-service__answer--visible')
-    const icons = document.querySelectorAll(".icon-plus")
-    questions.forEach((element, index) => {
-        element.addEventListener("click", function(){
-            const answer = this.nextElementSibling;
-            answer.classList.toggle('jewelry-service__answer--visible');
-            const icon = this.querySelector('.jewelry-service__icon');
-            icon.classList.toggle('icon-plus');
-            icon.classList.toggle('icon-minus');
-        })
-    })
-})
+const questions = document.querySelectorAll('.jewelry-service__question');
+const answers = document.querySelectorAll('.jewelry-service__answer');
+const icons = document.querySelectorAll(".jewelry-service__icon");
+
+questions.forEach((element) => {
+    element.addEventListener("click", function() {
+        const answer = this.nextElementSibling;
+        const icon = this.querySelector('.jewelry-service__icon');
+        const isVisible = answer.classList.contains('jewelry-service__answer--visible');
+
+        // Закрываем все ответы и сбрасываем иконки
+        answers.forEach((answer) => {
+            answer.classList.remove('jewelry-service__answer--visible');
+        });
+
+        icons.forEach((icon) => {
+            icon.classList.remove('icon-minus');
+            icon.classList.add('icon-plus');
+        });
+
+        // Если текущий ответ уже открыт, не открываем его снова
+        if (!isVisible) {
+            answer.classList.add('jewelry-service__answer--visible');
+            icon.classList.remove('icon-plus');
+            icon.classList.add('icon-minus');
+        }
+    });
+});
+

@@ -6,46 +6,31 @@
     get_header(); 
 ?>
 <div class="main">
+    <div class="page-title"><?= get_the_title();?></div>
     <div class="external-indentation">
-        <div class="contents">
-            <div class="contents__title">Winkel</div>
-            <div class="content">
-                <div class="content__item">
-                    <div class="content__text">
-                        Een tevreden klant, daar doen we het voor bij Peek Juwelier. En in onze prachtige winkel van 120 m2 aan het 
-                        Stationsplein in Heiloo kunnen we u goed van dienst zijn. Onze sieraden en horloges worden overzichtelijk gepresenteerd 
-                        en u kunt op uw gemak uw keuze maken. Onze medewerkers nemen de tijd voor u.
-                        
-                        Naast onze winkel hebben wij ook een eigen atelier en werkplaats waar we sieraden en horloges in ere herstellen. 
-                        We zijn bovendien goed bereikbaar met de auto en het openbaar vervoer. In de parkeergarage onder onze winkel kunt u 
-                        twee uur gratis parkeren.
-                    </div>
-                </div>
+        <div class="external-indentation-box">
+            <div class="other">
+                <div class="other__title"><?= CFS()->get("other_information_title");?></div>
+                <div class="other__description"><?= CFS()->get("other_information_descripton");?></div>
             </div>
-
-        </div>
-        <div class="slider-box">
-        <div class="slider">
-            <div class="slider-image">
-                <?php
-                        $loop = CFS()->get("slider_images");
-                        foreach($loop as $row){
-                            ?>
-                            <img src="<?= $row["slider_image"];?>" class="slider-image__item">
-                            <?php
+            <div class="slider-v2 swiper-container">
+                <div class="slider-v2__wrapper swiper-wrapper">
+                    <?php
+                        $loopSliderImage = CFS()->get("slider_images");
+                        foreach($loopSliderImage as $rowImage){
+                    ?>
+                    <div class="slider-v2__slide swiper-slide">
+                        <img src="<?= $rowImage["slider_image"];?>" class="slider__image">
+                    </div>
+                    <?php
                         }
                     ?>
-            </div>
-        </div>
-
-        <div class="slider-controllers">
-                <div class="slider-controllers__circles"></div>
-                <div class="slider-controllers__arrow">
-                    <div class="button">
-                        <div class="button__link slider-controllers__arrow-icon icon-left"></div>
-                    </div>
-                    <div class="button">
-                        <div class="button__link slider-controllers__arrow-icon icon-right"></div>
+                </div>
+                <div class="slider-v2__tools">
+                    <div class="slider-v2__pagination swiper-pagination"></div>
+                    <div class="slider-v2__buttons">
+                        <div class="slider-v2__prev swiper-button-prev icon-left"></div>
+                        <div class="slider-v2__next swiper-button-next icon-right"></div>
                     </div>
                 </div>
             </div>

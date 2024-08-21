@@ -7,7 +7,7 @@
 ?>
 <div class="main">
     <div class="external-indentation other-style-contacts">
-        <div class="contacts">
+        <div class="contacts wow animate__animated animate__fadeInUp">
             <div class="contact__title">
                 Contact & Route
             </div>

@@ -18,15 +18,11 @@
         
         wp_enqueue_script("script", get_template_directory_uri() . "/assets/js/script.js", array(), "1.0.0", true );
         wp_enqueue_script("burger_menu", get_template_directory_uri() . "/assets/js/burgerMenu.js", array(), "1.0.0", true );
-        wp_enqueue_script("slider", get_template_directory_uri() . "/assets/js/slider.js", array(), "1.0.0", true );
         wp_enqueue_script('wow-js', get_template_directory_uri() . '/assets/js/wow.min.js', array('jquery'), null, true);
         wp_add_inline_script('wow-js', 'new WOW().init();');
 
         wp_enqueue_script('swiper-js', get_template_directory_uri() . '/assets/js/swiper-bundle.min.js', array(), null, true);
         wp_enqueue_script('custom-swiper-init', get_template_directory_uri() . '/assets/js/swiper-init.js', array('swiper-js'), null, true);
-        if (is_page('Home')) {
-            wp_enqueue_script("index", get_template_directory_uri() . "/assets/js/index.js", array(), "1.0.0", true );
-        }
     }
 
     function add_menu(){

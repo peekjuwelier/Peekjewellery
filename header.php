@@ -23,7 +23,7 @@
         <header class="header header-custom-style">
             <div class="nav-bar">
                 <div class="logo">
-                    <a href=<?= home_url()?>><img src="<?= get_template_directory_uri() ?>/assets/image/home/luxa.org-color-logo.png" class="logo__image"/></a>
+                    <a href=<?= home_url()?>><img src="<?= get_template_directory_uri() ?>/assets/image/home/logo.png" class="logo__image"/></a>
                 </div>
                 <div class="menu">
                     <div class= "menu__icon">
